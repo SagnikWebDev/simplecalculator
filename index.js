@@ -3,12 +3,6 @@ function setrootincss(variable, value) {
     document.documentElement.style.setProperty(`${variable[i]}`, `${value[i]}`);
   }
 }
-let count = true;
-let number = "";
-let valueofnext = "";
-let currentbtnclicked = "";
-let decimalsignal = true;
-let lastlength = 0;
 const resultsection = document.querySelector(".result-section");
 window.addEventListener("click", (e) => {
   const targetElement = e.target;
