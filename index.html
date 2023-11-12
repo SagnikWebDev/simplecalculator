@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./index.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="section1">
+        <div class="mode-btn">
+          <div class="circle effect"><i class="fa-regular fa-sun"></i></div>
+        </div>
+        <p>Switch Mode</p>
+      </div>
+      <div class="section2">
+        <div class="add-number-section">0</div>
+        <div class="result-section">0</div>
+      </div>
+      <div class="line"></div>
+      <div class="section4">
+        <div class="extra-option">
+          <button id="expand">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </button>
+          <button id="delete">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+        </div>
+        <div class="btn-wrapper">
+          <button class="btn sec-oparation csym c" id="c">C</button>
+          <button class="btn sec-oparation operation modules" id="%">%</button>
+          <button class="btn main-oparation operation divition" id="/">
+            /
+          </button>
+          <button class="btn num" id="7">7</button>
+          <button class="btn num" id="8">8</button>
+          <button class="btn num" id="9">9</button>
+          <button class="btn main-oparation operation mul" id="x">X</button>
+          <button class="btn num" id="4">4</button>
+          <button class="btn num" id="5">5</button>
+          <button class="btn num" id="6">6</button>
+          <button class="btn main-oparation operation sub" id="-">-</button>
+          <button class="btn num" id="1">1</button>
+          <button class="btn num" id="2">2</button>
+          <button class="btn num" id="3">3</button>
+          <button class="btn main-oparation operation add" id="+">+</button>
+          <button class="btn zero num" id="0">0</button>
+          <button class="btn decimal num" id=".">.</button>
+          <button class="btn main-oparation equal" id="equal">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

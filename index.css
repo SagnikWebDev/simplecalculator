@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --white-color: white;
+  --orange-color: rgb(255, 128, 0);
+  --dark-white-color: rgb(209, 203, 203);
+  --black-color: rgb(34, 35, 37);
+  --dark-gray-color: rgb(38, 40, 44);
+  --top-oparation-bg-color: rgb(127, 104, 75);
+  --btn-bg-color: rgb(105, 63, 39);
+  --section4-bg-color: rgb(38, 40, 44);
+  --upper-color: rgb(34, 35, 37);
+}
+body {
+  min-height: 426px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 300px;
+  border-radius: 10px;
+  transition: all 500ms ease;
+}
+.wrapper-expand {
+  width: 400px;
+  height: 400px;
+  transition: all 500ms ease;
+}
+.section1 {
+  display: flex;
+  align-items: center;
+  color: var(--dark-white-color);
+  padding: 5px 10px;
+  gap: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.mode-btn {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding-inline: 2px;
+}
+.circle {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange-color);
+  border: 1px solid var(--black-color);
+  border-radius: 50%;
+  color: var(--black-color);
+  transition: all 500ms ease;
+}
+
+.effect {
+  margin-left: 28px;
+  transition: all 500ms ease;
+}
+.section1,
+.section2 {
+  background-color: var(--upper-color);
+}
+.add-number-section {
+  word-wrap: break-word;
+  font-size: 25px;
+  color: rgb(182, 176, 176);
+  text-align: right;
+  padding: 20px;
+}
+.result-section {
+  word-wrap: break-word;
+  font-size: 40px;
+  color: var(--white-color);
+  text-align: right;
+  padding-inline: 10px;
+}
+.line {
+  height: 5px;
+  background-color: var(--white-color);
+}
+.extra-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-inline: 10px;
+}
+#delete,
+#expand {
+  border: none;
+  font-size: 20px;
+  background-color: var(--section4-bg-color);
+  color: var(--orange-color);
+}
+/* last section edit */
+.section4 {
+  background-color: var(--section4-bg-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.btn {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-bg-color);
+  color: var(--white-color);
+}
+.sec-oparation {
+  background-color: var(--top-oparation-bg-color) !important;
+}
+.main-oparation {
+  background-color: var(--orange-color) !important;
+}
+.btn-wrapper {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+#c,
+.zero {
+  grid-column: 1 / span 2;
+}
